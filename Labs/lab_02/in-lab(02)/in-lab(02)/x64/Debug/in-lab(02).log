@@ -1,0 +1,6 @@
+﻿  task3.cpp
+  task4.cpp
+C:\Users\ranas\Desktop\DSA\lab_02\in-lab(02)\in-lab(02)\task4.cpp(32,37): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+C:\Users\ranas\Desktop\DSA\lab_02\in-lab(02)\in-lab(02)\task.h(111): warning C4715: 'stack<char>::pop': not all control paths return a value
+  in-lab(02).vcxproj -> C:\Users\ranas\Desktop\DSA\lab_02\in-lab(02)\x64\Debug\in-lab(02).exe
