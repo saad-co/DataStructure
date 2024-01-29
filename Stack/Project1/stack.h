@@ -17,7 +17,6 @@
 //		{
 //			new_arr[i] = data[i];
 //		}
-//		//this->~Stack();
 //		data = new_arr;
 //		capacity = new_size;
 //	}

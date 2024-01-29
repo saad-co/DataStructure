@@ -3,7 +3,7 @@ using namespace std;
 
 int squares_sum(int n)
 {
-    if (n == 1)
+    if (n == 0)
     {
         return 1;
     }
@@ -15,7 +15,7 @@ int squares_sum(int n)
 
 int main()
 {
-    int n = -3;
+    int n = 4;
     cout << "Input: " << n << endl;
     cout << "Output: " << squares_sum(n) << endl;
     return 0;

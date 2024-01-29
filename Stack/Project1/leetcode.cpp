@@ -105,48 +105,48 @@
 //}
 
 
-#include<iostream>
-#include<vector>
-#include<algorithm>
-#include<Set>
-using namespace std;
-
-int findSecondLargest(int n, vector<int>& arr)
-{
-	int flag = -1;
-	for (int i = 0; i < arr.size()-1; i++)
-	{
-		if (arr[i] == arr[i + 1])
-		{
-			flag = 1;
-		}
-	}
-	if (flag == -1)
-		return -1;
-	// Write your code here.
-	sort(arr.begin(), arr.end());
-	for (auto iter : arr)
-	{
-		cout << iter << " ";
-	}
-	int max = arr[arr.size() - 1];
-	cout <<endl<< "max: " << max << endl;
-	int sec = -1000;
-	//for (auto iter : arr)
-	//{
-	for (int i = 0; i < n-1; i++)
-	{
-		if (arr[i] < arr[i + 1] && arr[i + 1] < max)
-		{
-			sec = arr[i + 1];
-			cout << "in if: " << endl;
-		}
-	}
-	cout << "Sec: " << sec;
-	//}
-	return sec;
-
-}
+//#include<iostream>
+//#include<vector>
+//#include<algorithm>
+//#include<Set>
+//using namespace std;
+//
+//int findSecondLargest(int n, vector<int>& arr)
+//{
+//	int flag = -1;
+//	for (int i = 0; i < arr.size()-1; i++)
+//	{
+//		if (arr[i] == arr[i + 1])
+//		{
+//			flag = 1;
+//		}
+//	}
+//	if (flag == -1)
+//		return -1;
+//	// Write your code here.
+//	sort(arr.begin(), arr.end());
+//	for (auto iter : arr)
+//	{
+//		cout << iter << " ";
+//	}
+//	int max = arr[arr.size() - 1];
+//	cout <<endl<< "max: " << max << endl;
+//	int sec = -1000;
+//	//for (auto iter : arr)
+//	//{
+//	for (int i = 0; i < n-1; i++)
+//	{
+//		if (arr[i] < arr[i + 1] && arr[i + 1] < max)
+//		{
+//			sec = arr[i + 1];
+//			cout << "in if: " << endl;
+//		}
+//	}
+//	cout << "Sec: " << sec;
+//	//}
+//	return sec;
+//
+//}
 
 
 
@@ -207,11 +207,11 @@ int findSecondLargest(int n, vector<int>& arr)
 //}
 
 
-int main()
-{
-	vector<int> nums = {-3,-3,-3,-3,-3,-3,-3};
-	int val = findSecondLargest(7, nums);
-	cout << "value returned: " << val << endl;
+//int main()
+//{
+//	vector<int> nums = {-3,-3,-3,-3,-3,-3,-3};
+//	int val = findSecondLargest(7, nums);
+//	cout << "value returned: " << val << endl;
 	//cout << "second largest value is: " << val << endl;
 
 
@@ -221,4 +221,4 @@ int main()
 	//	cout << "ok";
 	//else
 	//	cout << "not";
-}
+//}

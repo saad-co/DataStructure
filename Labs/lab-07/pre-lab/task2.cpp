@@ -86,7 +86,6 @@ public:
 			temp = queueData[cnt].val;
 			// Replace the element at index cnt with the last element
 			this->queueData[cnt] = this->queueData[numberOfElements - 1];
-
 			numberOfElements--;
 			return temp;
 		}

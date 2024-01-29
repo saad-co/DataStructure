@@ -30,6 +30,20 @@ public:
     {
         if (numberOfElements != queueCapacity)
         {
+            for (int i = 0; i < queueCapacity; i++)
+            {
+                if (queueData[i] == element)
+                {
+                    int temp = queueData[i];
+                    for (int l = i; l > 0; l--)
+                    {
+                        queueData[l] = queueData[l - 1];
+                    }
+                    queueData[0] = temp;
+                    numberOfElements++;
+                    return;
+                }
+            }
             queueData[frontIndex++] = element;
             numberOfElements++;
             return;
